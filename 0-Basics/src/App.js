@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
-import Random from './components/Expenses/random';
-
+import './App.css';
 const DUMMY_EXPENSES = [
   {
     id: 'e1',
@@ -47,7 +46,7 @@ const App = () => {
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-      <Random kek="wow" />
+      <h1 className="madeWith">Made with ❤️</h1>
     </div>
   );
 };
